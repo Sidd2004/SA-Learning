@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head><title>SIGN UP</title>
+  <link rel=icon href=signup.png>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+  <header class="site-header clearfix">
+ <nav>
+
+<center><img src="avatar.webp" width="300" height="300"></center>
+
+<div class="container">
+  
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+       <label for="Email">Email</label>
+    <input type="text" id="Email" name="Email" required>
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <a href="Home.html"><input type="submit" value="Submit""></a>
+  </form>
+</div>
+
+        
+
+</body>
+</html>
+
+
+
